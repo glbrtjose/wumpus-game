@@ -2,7 +2,7 @@
   <form class="form" [formGroup]="controller">
     <input class="input" placeholder="columnas" formControlName="colums" type="text" />
     <input class="input" placeholder="filas" formControlName="rows" type="text" />
-    <button type="submit" class="submit" (click)="submit()">submit</button>
+    <button type="submit" class="submit" (click)="submit()">Comenzar</button>
   </form>
   <ng-container *ngIf="enable">
     <app-game
