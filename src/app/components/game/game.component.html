@@ -1,0 +1,22 @@
+<div
+  class="grid gap-3"
+  [style]="{
+    'grid-template-columns': 'repeat(' + colums + ', minmax(0, 1fr))'
+  }"
+>
+  <div
+    *ngFor="let item of list; let i = index"
+    class="text-center h-[130px] {{
+      places.includes(i) ? 'bg-blue-600' : 'bg-[#000]'
+    }} flex items-center justify-center"
+  >
+    <div
+      *ngIf="index === i"
+      class="rounded-full bg-red-500 w-[30px] h-[30px]"
+    ></div>
+    <div *ngIf="shines.includes(i)">BRILLO</div>
+    <div *ngIf="brisa.includes(i)">BRISA</div>
+    <div *ngIf="random.includes(i)">POZO</div>
+    <div *ngIf="treasures.includes(i)">ORO</div>
+  </div>
+</div>
