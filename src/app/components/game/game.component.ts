@@ -79,14 +79,14 @@ export class GameComponent implements OnInit {
       setTimeout(() => {
         alert('Caiste en un pozo, pierdes');
         this.gameOver.emit();
-      }, 500);
+      }, 50);
     }
     const gold = this.treasures.find((index) => this.index === index);
     if (gold) {
       setTimeout(() => {
         alert('Encontraste oro, Ganaste!');
         this.gameOver.emit();
-      }, 500);
+      }, 50);
     }
   }
   constructor() {}
